@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1587833940 source:c:\users\omb hd\desktop\passmanager\passmanager\main.c
+	"pass.h"
+
+1587834314 c:\users\omb hd\desktop\passmanager\passmanager\pass.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1587834312 source:c:\users\omb hd\desktop\passmanager\passmanager\create_file.c
+	"pass.h"
+
