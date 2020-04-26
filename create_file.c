@@ -5,13 +5,15 @@ void	get_password(char *pass)
 	char c;
 	int i;
 
-	i = -1;
-	while (++i < 255)
+	i = 0;
+	while (i < 255)
 	{
 		c = getch();
 		if (c == '\r')
 			break ;
-		pass[i] = c;
+        else if (c == 127)
+            continue ;
+		pass[i++] = c;
 		printf("*");
 	}
 	pass[i] = 0;
@@ -50,7 +52,10 @@ void	gather_info(user *user)
 int		create_file(user *user)
 {
 	gather_info(user);
+    strcat(user->path, "data/");
+    strcat(user->path, user->name);
+    strcat(user->path, ".pm");
+	user->f = fopen(user->path, "w");
 
-	user->f = fopen(user->name, "w");
 	fprintf(user->f, "%s", user->pass);
 }

@@ -13,9 +13,10 @@
 typedef	struct	user
 {
 	char is_new;
-	char name[256];
-	char pass[256];
-	char confirmed_pass[256];
+	char name[64];
+	char pass[64];
+	char confirmed_pass[64];
+	char path[256];
 	FILE *f;
 }				user;
 

@@ -2,12 +2,24 @@
 1587833940 source:c:\users\omb hd\desktop\passmanager\passmanager\main.c
 	"pass.h"
 
-1587834314 c:\users\omb hd\desktop\passmanager\passmanager\pass.h
+1587835140 c:\users\omb hd\desktop\passmanager\passmanager\pass.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<conio.h>
 
 1587834312 source:c:\users\omb hd\desktop\passmanager\passmanager\create_file.c
+	"pass.h"
+
+1587833940 source:c:\users\omb hd\desktop\passmanager1\main.c
+	"pass.h"
+
+1587835140 c:\users\omb hd\desktop\passmanager1\pass.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1587877877 source:c:\users\omb hd\desktop\passmanager1\create_file.c
 	"pass.h"
 
