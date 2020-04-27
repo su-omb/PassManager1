@@ -11,15 +11,16 @@
 1587834312 source:c:\users\omb hd\desktop\passmanager\passmanager\create_file.c
 	"pass.h"
 
-1587833940 source:c:\users\omb hd\desktop\passmanager1\main.c
+1587994191 source:c:\users\omb hd\desktop\passmanager1\main.c
 	"pass.h"
 
-1587835140 c:\users\omb hd\desktop\passmanager1\pass.h
+1587994069 c:\users\omb hd\desktop\passmanager1\pass.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	<strings.h>
 	<conio.h>
 
-1587877877 source:c:\users\omb hd\desktop\passmanager1\create_file.c
+1587992692 source:c:\users\omb hd\desktop\passmanager1\create_file.c
 	"pass.h"
 

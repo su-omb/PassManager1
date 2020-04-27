@@ -6,15 +6,22 @@ void	get_password(char *pass)
 	int i;
 
 	i = 0;
-	while (i < 255)
+	puts("\n");
+	while (i >= 0)
 	{
 		c = getch();
-		if (c == '\r')
+		if (c == ENTER)
 			break ;
-        else if (c == 127)
-            continue ;
-		pass[i++] = c;
-		printf("*");
+        else if (c == BKSP && i > 0)
+        {
+            i--;
+            printf("\b \b");
+        }
+        else
+        {
+            pass[i++] = c;
+            printf("* \b");
+        }
 	}
 	pass[i] = 0;
 }
@@ -45,7 +52,7 @@ void	gather_info(user *user)
 		get_password(user->confirmed_pass);
 		p = strcmp(user->pass, user->confirmed_pass);
 		if (p != 0)
-			printf("\nErreur : Les deux mots de passe ne sont pas identiques !\n");
+            printf("\nErreur : Les deux mots de passe ne sont pas identiques !\n");
 	} while (p != 0);
 }
 
@@ -54,7 +61,7 @@ int		create_file(user *user)
 	gather_info(user);
     strcat(user->path, "data/");
     strcat(user->path, user->name);
-    strcat(user->path, ".pm");
+    strcat(user->path, ".passm");
 	user->f = fopen(user->path, "w");
 
 	fprintf(user->f, "%s", user->pass);

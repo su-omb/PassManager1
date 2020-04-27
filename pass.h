@@ -4,11 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <strings.h>
 #include <conio.h>
 
 
 # define TRUE 1
 # define FALSE 0
+# define ENTER 13
+# define BKSP 8
 
 typedef	struct	user
 {
@@ -22,5 +25,7 @@ typedef	struct	user
 
 void	display_choices(char *choices);
 int		create_file(user *user);
+void    str_bzero(char *s, int len);
+
 
 #endif // PASS_H_INCLUDED

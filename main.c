@@ -24,6 +24,12 @@ char	is_new()
 	return (b);
 }
 
+void    str_bzero(char *s, int len)
+{
+    while (len--)
+        *s++ = 0;
+}
+
 int 	main(void)
 {
 	user user;
