@@ -17,17 +17,11 @@ char	is_new()
 	{
 		if (b != 'n' && b != 'o')
 			display_choices("no");
-		printf("\n[n] Nouveau Utilisateur.\n[o] Utilisateur déja inscrit.\n\nVotre choix : ");
+		printf("\n[n] Nouveau Utilisateur.\n[o] Utilisateur dÃ©ja inscrit.\n\nVotre choix : ");
 		b = getchar();
 		getchar();
 	} while (b != 'n' && b != 'o');
 	return (b);
-}
-
-void    str_bzero(char *s, int len)
-{
-    while (len--)
-        *s++ = 0;
 }
 
 int 	main(void)
