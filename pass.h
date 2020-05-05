@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <strings.h>
 #include <conio.h>
 
 
@@ -24,8 +23,10 @@ typedef	struct	user
 }				user;
 
 void	display_choices(char *choices);
-int		create_file(user *user);
+void		create_file(user *user);
 void    str_bzero(char *s, int len);
+int     check_extension(char *file_name, char *extension);
+
 
 
 #endif // PASS_H_INCLUDED
