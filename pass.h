@@ -23,9 +23,9 @@ typedef	struct	user
 }				user;
 
 void	display_choices(char *choices);
-void		create_file(user *user);
-void    str_bzero(char *s, int len);
+void	create_file(user *user);
 int     check_extension(char *file_name, char *extension);
+char	is_new();
 
 
 

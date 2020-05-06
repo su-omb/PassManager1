@@ -9,7 +9,6 @@ void	get_password(char *pass)
 	while (i >= 0)
 	{
 		c = getch();
-		//printf("\ni = %d and c = %c | %d \n", i, c, c);
 		if (c == ENTER)
 			break ;
         else if (c == BKSP)
