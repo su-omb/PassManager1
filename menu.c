@@ -17,9 +17,11 @@ char	is_new()
 	{
 		if (b != 'n' && b != 'o')
 			display_choices("no");
-		printf("\n[n] Nouveau Utilisateur.\n[o] Utilisateur déja inscrit.\n\nVotre choix : ");
+		printf("\n[n/N] Nouveau Utilisateur.\n[o/O] Utilisateur déja inscrit.\n\nVotre choix : ");
 		b = getchar();
 		getchar();
-	} while (b != 'n' && b != 'o');
+	} while (b != 'n' && b != 'o' && b != 'N' && b != 'O');
 	return (b);
 }
+
+
